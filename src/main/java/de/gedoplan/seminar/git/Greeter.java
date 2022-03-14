@@ -6,6 +6,6 @@ public class Greeter {
   }
 
   public String greet(String name) {
-    return "Helo " + name + "!";
+    return "Hello " + name + "!";
   }
 }
