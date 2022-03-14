@@ -1,7 +1,9 @@
 package de.gedoplan.seminar.git;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GreeterTest {
 
@@ -11,6 +13,6 @@ public class GreeterTest {
     String name = "Klaus";
     String expected = "Hello Klaus!";
 
-    Assertions.assertEquals(expected, greeter.greet(name));
+    assertThat(greeter.greet(name), is(equalTo(expected)));
   }
 }
